@@ -14,7 +14,7 @@ This template has several objectives:
 2. `cd gemstone`
 3. delete the `.git` folder (`rm .git`)
 4. `git init` to start a new repo for your bot
-5. `bundle install --path vendor/bin --binstubs` (`gem install bundler` if you don't have `bundler` yet)
+5. `bundle install --path vendor/bundle --binstubs` (`gem install bundler` if you don't have `bundler` yet)
 
 Follow steps in the next section to configure your bot and do a first-time run.
 
