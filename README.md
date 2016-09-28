@@ -10,6 +10,15 @@ This template has several objectives:
  - Rubocop friendly
  - Implements [bundler](http://bundler.io/) for managing your gems
 
+## Setup
+
+1. `git clone https://github.com/z64/gemstone.git`
+2. `cd gemstone`
+2. delete the `.git` folder (`rm .git`)
+3. `git init`
+4. `bundle install --path vendor/bin --binstubs` (`gem install bundler` if you don't have `bunlder` yet)
+5. Follow steps in the next section to configure your bot and do a first-time run.
+
 ## Configuring and running your bot
 
 Make a copy of [config-template.yaml](https://github.com/z64/gemstone/blob/master/data/config-template.yaml) and rename it to `config.yaml` *exactly*.
@@ -64,7 +73,7 @@ module Bot
 end
 ```
 
-Save the file, and start the bot. The new command file will be detected and added into the bot automatically. 
+Save the file, and start the bot. The new command file will be detected and added into the bot automatically.
 
 ### Adding an event
 
@@ -87,7 +96,7 @@ module Bot
 end
 ```
 
-Save the file, and start the bot. The new event file will be detected and added into the bot automatically. 
+Save the file, and start the bot. The new event file will be detected and added into the bot automatically.
 
 ## Generating docs
 
