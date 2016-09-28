@@ -10,3 +10,6 @@ prefix:
 
 # ID of bot owner
 owner:
+
+# game the bot is playing
+game:
