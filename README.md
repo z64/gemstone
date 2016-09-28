@@ -2,8 +2,6 @@
 
 This is a template for a modular [Discord](https://discordapp.com/) chat bot using meew0's [discordrb](https://github.com/meew0/discordrb).
 
-## **If you haven't installed discordrb yet, please follow the instructions [here](https://github.com/meew0/discordrb/blob/master/README.md) first!**
-
 This template has several objectives:
  - Provide a modular bot template for novice users that is easy to build on and extend
  - A structure that is YARDoc friendly so you can generate awesome docs for your bot right away for your users
