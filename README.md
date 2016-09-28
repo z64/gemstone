@@ -14,10 +14,11 @@ This template has several objectives:
 
 1. `git clone https://github.com/z64/gemstone.git`
 2. `cd gemstone`
-2. delete the `.git` folder (`rm .git`)
-3. `git init`
-4. `bundle install --path vendor/bin --binstubs` (`gem install bundler` if you don't have `bunlder` yet)
-5. Follow steps in the next section to configure your bot and do a first-time run.
+3. delete the `.git` folder (`rm .git`)
+4. `git init` to start a new repo for your bot
+5. `bundle install --path vendor/bin --binstubs` (`gem install bundler` if you don't have `bunlder` yet)
+
+Follow steps in the next section to configure your bot and do a first-time run.
 
 ## Configuring and running your bot
 
