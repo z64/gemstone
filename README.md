@@ -12,7 +12,7 @@ This template has several objectives:
 
 1. `git clone https://github.com/z64/gemstone.git`
 2. `cd gemstone`
-3. delete the `.git` folder (`rm .git`)
+3. delete the `.git` folder (`rm -r .git`)
 4. `git init` to start a new repo for your bot
 5. `bundle install --path vendor/bundle --binstubs` (`gem install bundler` if you don't have `bundler` yet)
 
