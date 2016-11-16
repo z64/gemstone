@@ -4,9 +4,7 @@ module Bot
     # This used to check if bot is alive
     module Ping
       extend Discordrb::Commands::CommandContainer
-      command :ping do |event|
-        event << 'Pong!'
-      end
+      command(:ping ) { |event| "`#{Time.now - event.timestamp}ms`" }
     end
   end
 end
