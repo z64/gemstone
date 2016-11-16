@@ -2,7 +2,7 @@
 # Discord API client ID
 client_id:
 
-# Discord API bot user token
+# Discord API client token
 token:
 
 # Command prefix
