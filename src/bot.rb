@@ -9,7 +9,7 @@ module Bot
   Dir['src/modules/*.rb'].each { |mod| load mod }
 
   # Bot configuration
-  CONFIG = Config.new
+  CONFIG = Config.new("#{Dir.pwd}/data/config.yaml")
 
   # Create the bot.
   # The bot is created as a constant, so that you
