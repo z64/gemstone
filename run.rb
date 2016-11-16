@@ -1,2 +1,2 @@
 # Require bot library
-require_relative 'lib/bot'
+require_relative 'src/bot'
