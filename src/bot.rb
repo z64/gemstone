@@ -9,7 +9,7 @@ module Bot
   Dir['src/modules/*.rb'].each { |mod| load mod }
 
   # Bot configuration
-  CONFIG = Config.new("#{Dir.pwd}/data/config.yaml")
+  CONFIG = OpenStruct.new YAML.load_file 'data/config.yaml'
 
   # Create the bot.
   # The bot is created as a constant, so that you
