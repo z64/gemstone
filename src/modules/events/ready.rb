@@ -1,6 +1,6 @@
 module Bot
   module DiscordEvents
-    # This event is processed when the bot connects to Discord.
+    # This event is processed each time the bot succesfully connects to discord.
     module Ready
       extend Discordrb::EventContainer
       ready do |event|
