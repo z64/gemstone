@@ -1,20 +1,21 @@
-## gemstone
+# gemstone
 
 This is a template for a modular [Discord](https://discordapp.com/) chat bot using meew0's [discordrb](https://github.com/meew0/discordrb).
 
 This template has several objectives:
- - Provide a modular bot template for novice users that is easy to build on and extend
- - A structure that is YARDoc friendly so you can generate awesome docs for your bot right away for your users
- - Rubocop friendly
- - Implements [bundler](http://bundler.io/) for managing your gems
+
+- Provide a modular bot template for novice users that is easy to build on and extend
+- A structure that is YARDoc friendly so you can generate awesome docs for your bot right away for your users
+- Rubocop friendly
+- Implements [bundler](http://bundler.io/) for managing your gems
 
 ## Setup
 
 1. `git clone https://github.com/z64/gemstone.git`
-2. `cd gemstone`
-3. delete the `.git` folder (`rm -r .git`)
-4. `git init` to start a new repo for your bot
-5. `bundle install --path vendor/bundle --binstubs` (`gem install bundler` if you don't have `bundler` yet)
+1. `cd gemstone`
+1. delete the `.git` folder (`rm -rf .git`)
+1. `git init` to start a new repo for your bot
+1. `bundle install --path vendor/bundle --binstubs` (`gem install bundler` if you don't have `bundler` yet)
 
 Follow steps in the next section to configure your bot and do a first-time run.
 
