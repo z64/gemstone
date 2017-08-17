@@ -1,5 +1,4 @@
 # Gems
-require 'bundler/setup'
 require 'discordrb'
 require 'ostruct'
 require 'yaml'
