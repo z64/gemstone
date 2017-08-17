@@ -60,15 +60,13 @@ Create a new `*.rb` file here for your command: `/lib/modules/commands/my_comman
 Start with the following structure, and fill in whatever you would like that command to do, following `discordrb`'s documenation:
 
 ```ruby
-module Bot
-  module DiscordCommands
-    # Document your command
-    # in some YARD comments here!
-    module MyCommand
-      extend Discordrb::Commands::CommandContainer
-      command :my_command do |event|
-        # do discord things!
-      end
+module Bot::DiscordCommands
+  # Document your command
+  # in some YARD comments here!
+  module MyCommand
+    extend Discordrb::Commands::CommandContainer
+    command :my_command do |event|
+      # do discord things!
     end
   end
 end
@@ -83,15 +81,13 @@ Create a new `*.rb` file here for your command: `/lib/modules/events/my_event.rb
 Start with the following structure, and fill in whatever you would like that command to do, following `discordrb`'s documenation:
 
 ```ruby
-module Bot
-  module DiscordEvents
-    # Document your event
-    # in some YARD comments here!
-    module MyEvent
-      extend Discordrb::EventContainer
-      user_join do |event|
-        # do discord things!
-      end
+module Bot::DiscordEvents
+  # Document your event
+  # in some YARD comments here!
+  module MyEvent
+    extend Discordrb::EventContainer
+    user_join do |event|
+      # do discord things!
     end
   end
 end
