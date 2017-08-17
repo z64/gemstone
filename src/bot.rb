@@ -1,6 +1,7 @@
 # Gems
 require 'bundler/setup'
 require 'discordrb'
+require 'ostruct'
 require 'yaml'
 
 # The main bot module.
