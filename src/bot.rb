@@ -19,19 +19,17 @@ module Bot
                                             token: CONFIG.token,
                                             prefix: CONFIG.prefix)
 
-  # Discord commands
-  module DiscordCommands; end
-  Dir['src/modules/commands/*.rb'].each { |mod| load mod }
-  DiscordCommands.constants.each do |mod|
-    BOT.include! DiscordCommands.const_get mod
+  def self.load_modules(klass, path)
+    new_module = Module.new
+    const_set(klass.to_sym, new_module)
+    Dir["src/modules/#{path}/*.rb"].each { |file| load file }
+    new_module.constants.each do |mod|
+      BOT.include! new_module.const_get(mod)
+    end
   end
 
-  # Discord events
-  module DiscordEvents; end
-  Dir['src/modules/events/*.rb'].each { |mod| load mod }
-  DiscordEvents.constants.each do |mod|
-    BOT.include! DiscordEvents.const_get mod
-  end
+  load_modules(:DiscordCommands, 'commands')
+  load_modules(:DiscordEvents, 'events')
 
   # Run the bot
   BOT.run
