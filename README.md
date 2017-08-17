@@ -15,7 +15,8 @@ This template has several objectives:
 1. `cd gemstone`
 1. delete the `.git` folder (`rm -rf .git`)
 1. `git init` to start a new repo for your bot
-1. `bundle install --path vendor/bundle --binstubs` (`gem install bundler` if you don't have `bundler` yet)
+1. `gem install bundler` and `gem install rake` if you haven't yet
+1. `rake install`
 
 Follow steps in the next section to configure your bot and do a first-time run.
 
@@ -25,7 +26,7 @@ Make a copy of [config-template.yaml](https://github.com/z64/gemstone/blob/maste
 
 Fill out each field provided to set up a minimal discord bot, with a few commands and an event to get you started.
 
-To run your bot, open your terminal and run `ruby run.rb` in the top level folder of your bot. You're free to make something like a bash script, or Windows batch file that will do this for you at the click of an icon. You can also do other things before running your bot this way.
+To run your bot, open your terminal and run `rake` in the top level folder of your bot. You're free to make something like a bash script, or Windows batch file that will do this for you at the click of an icon. You can also do other things before running your bot this way.
 
 **For example,** here is my `run.sh` file:
 
@@ -42,7 +43,7 @@ do
   yardoc lib
 
   echo "starting bot.."
-  ruby run.rb
+  rake
 done
 ```
 
