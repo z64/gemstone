@@ -37,10 +37,10 @@ do
   git pull
 
   echo "running rubocop.."
-  rubocop lib
+  rubocop src
 
   echo "updating documentation.."
-  yardoc lib
+  yardoc src
 
   echo "starting bot.."
   rake
@@ -55,7 +55,7 @@ Following `discordrb`'s [documentation](http://www.rubydoc.info/gems/discordrb),
 
 ### Adding a command
 
-Create a new `*.rb` file here for your command: `/lib/modules/commands/my_command.rb`
+Create a new `*.rb` file here for your command: `/src/modules/commands/my_command.rb`
 
 Start with the following structure, and fill in whatever you would like that command to do, following `discordrb`'s documenation:
 
@@ -76,7 +76,7 @@ Save the file, and start the bot. The new command file will be detected and adde
 
 ### Adding an event
 
-Create a new `*.rb` file here for your command: `/lib/modules/events/my_event.rb`
+Create a new `*.rb` file here for your command: `/src/modules/events/my_event.rb`
 
 Start with the following structure, and fill in whatever you would like that command to do, following `discordrb`'s documenation:
 
