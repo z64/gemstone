@@ -35,8 +35,8 @@ module Bot
     end
   end
 
-  load_modules(:DiscordCommands, 'commands')
   load_modules(:DiscordEvents, 'events')
+  load_modules(:DiscordCommands, 'commands')
 
   # Run the bot
   BOT.run
