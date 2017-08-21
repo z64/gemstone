@@ -38,6 +38,8 @@ module Bot
   load_modules(:DiscordEvents, 'events')
   load_modules(:DiscordCommands, 'commands')
 
+  at_exit { BOT.stop }
+
   # Run the bot
   BOT.run
 end
