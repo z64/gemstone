@@ -121,4 +121,4 @@ In the top level folder, run:
 
 Join us on the [Discord API server](https://discord.gg/0SBTUU1wZTWfFQL2)!
 
-You can find me on discord, I'm `Lune#2639`.
+You can find me on discord, I'm `z64#2639`.
