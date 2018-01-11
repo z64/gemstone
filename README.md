@@ -86,7 +86,7 @@ module Bot::DiscordEvents
   # in some YARD comments here!
   module MyEvent
     extend Discordrb::EventContainer
-    user_join do |event|
+    member_join do |event|
       # do discord things!
     end
   end
