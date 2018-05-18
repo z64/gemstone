@@ -26,7 +26,9 @@ module Bot
   #   - extend Discordrb::Commands::CommandContainer
   # @param klass [Symbol, #to_sym] the name of the module
   # @param path [String] the path underneath `src/modules/` to load files from
-  def self.load_modules(klass, path)
+  # @param clear [true, false] whether the bots event handlers should be cleared before loading
+  def self.load_modules(klass, path, clear = false)
+    BOT.clear! if clear
     new_module = Module.new
     const_set(klass.to_sym, new_module)
     Dir["src/modules/#{path}/*.rb"].each { |file| load file }
